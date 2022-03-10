@@ -1,0 +1,15 @@
+<mat-card [class]="plano">
+    <mat-card-title>{{titulo}}</mat-card-title>
+  
+    <mat-card-subtitle>
+        <p>$<b>{{subtitulo}}</b></p>
+    </mat-card-subtitle>
+  
+    <mat-card class="item primeiro">{{storage}}</mat-card>
+    <mat-card class="item">{{users}}</mat-card>
+    <mat-card class="item">{{send}}</mat-card>
+  
+    <mat-card-actions>
+        <button mat-button class="botao" (click)="emitirEvento()">LEARN MORE</button>
+    </mat-card-actions>
+  </mat-card>
